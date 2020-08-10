@@ -8,7 +8,7 @@ import (
 
 func main() {
 	for i := 0; i < 100; i++ {
-		fmt.Println(singleton.Singleton.SingletonData())
+		fmt.Println(singleton.GetInstance().SingletonData())
 		time.Sleep(time.Second)
 	}
 }
