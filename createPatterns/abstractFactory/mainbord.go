@@ -15,14 +15,14 @@ func NewMainBord(mainbordType string) mainbord {
 	}
 }
 
-type dellMainBord struct {}
+type dellMainBord struct{}
 
-func(d* dellMainBord)SetupMainBord() {
+func (d *dellMainBord) SetupMainBord() {
 	fmt.Printf("I am seting dell main bord\n")
 }
 
-type lenovoMainBord struct {}
+type lenovoMainBord struct{}
 
-func(d* lenovoMainBord)SetupMainBord() {
+func (d *lenovoMainBord) SetupMainBord() {
 	fmt.Printf("I am seting lenovo main bord\n")
 }

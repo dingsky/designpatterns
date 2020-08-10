@@ -1,5 +1,6 @@
 package abstractFactory
+
 const (
-	Dell = "dell"
+	Dell   = "dell"
 	Lenovo = "lenovo"
 )

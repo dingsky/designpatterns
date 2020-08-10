@@ -5,7 +5,7 @@ type computer interface {
 	CreateCpu() cpu
 }
 
-func CreateComputer (computerType string) computer {
+func CreateComputer(computerType string) computer {
 	switch computerType {
 	case Dell:
 		return new(dellComputer)
@@ -15,29 +15,24 @@ func CreateComputer (computerType string) computer {
 }
 
 type lenovoComputer struct {
-
 }
 
-func (l *lenovoComputer)CreateMainBord() mainbord {
+func (l *lenovoComputer) CreateMainBord() mainbord {
 	return NewMainBord(Lenovo)
 }
 
-func (l *lenovoComputer)CreateCpu() cpu {
+func (l *lenovoComputer) CreateCpu() cpu {
 	return NewCpu(Lenovo)
 }
 
 type dellComputer struct {
-
 }
 
 //
-func (l *dellComputer)CreateMainBord() mainbord {
+func (l *dellComputer) CreateMainBord() mainbord {
 	return NewMainBord(Dell)
 }
 
-func (l *dellComputer)CreateCpu() cpu {
+func (l *dellComputer) CreateCpu() cpu {
 	return NewCpu(Dell)
 }
-
-
-

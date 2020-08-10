@@ -1,9 +1,9 @@
 package simpleFactory
 
 const (
-	Cockoo = "cockoo"
+	Cockoo  = "cockoo"
 	Seagull = "seagull"
-	Eagle = "eagle"
+	Eagle   = "eagle"
 )
 
 // bird 鸟类
@@ -23,4 +23,3 @@ func NewBird(birdName string) bird {
 		return new(eagle)
 	}
 }
-

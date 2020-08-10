@@ -15,14 +15,14 @@ func NewCpu(cpuType string) cpu {
 	}
 }
 
-type dellCpu struct {}
+type dellCpu struct{}
 
-func(d* dellCpu)SetUpCpu() {
+func (d *dellCpu) SetUpCpu() {
 	fmt.Printf("I am seting dell cpu\n")
 }
 
-type lenovoCpu struct {}
+type lenovoCpu struct{}
 
-func(d* lenovoCpu)SetUpCpu() {
+func (d *lenovoCpu) SetUpCpu() {
 	fmt.Printf("I am seting lenovo cpu\n")
 }

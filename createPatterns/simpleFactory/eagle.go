@@ -6,14 +6,14 @@ import "fmt"
 type eagle struct {
 }
 
-func(*eagle) Fly() {
+func (*eagle) Fly() {
 	fmt.Printf("Eagle flying!\n")
 }
 
-func(*eagle) Sing() {
+func (*eagle) Sing() {
 	fmt.Printf("Eagle singing!\n")
 }
 
-func(*eagle) Eat() {
+func (*eagle) Eat() {
 	fmt.Printf("I like eating meat!\n")
 }

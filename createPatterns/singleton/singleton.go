@@ -10,6 +10,6 @@ func init() {
 	Singleton.data = "Hello World!"
 }
 
-func (s *singleton)SingletonData() string {
+func (s *singleton) SingletonData() string {
 	return s.data
 }
