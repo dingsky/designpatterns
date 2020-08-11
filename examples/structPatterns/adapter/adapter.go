@@ -4,6 +4,8 @@ import (
 	"designpatterns/structPatterns/adapter"
 )
 
+// 使用220V的电压来运行110V的电脑, 中间相当于做了个变压
+
 func main() {
 	v110Computer := new(adapter.V110Computer)
 	RunComputer(v110Computer)
