@@ -14,7 +14,7 @@ func main() {
 func RunComputer(computer interface{}) {
 	switch computer.(type) {
 	case adapter.V110ComputerInterface:
-		v220Computer :=  adapter.NewAdapter(computer.(adapter.V110ComputerInterface))
+		v220Computer := adapter.NewAdapter(computer.(adapter.V110ComputerInterface))
 		v220Computer.Run220VComputer(220)
 	default:
 		computer.(adapter.V220ComputerInterface).Run220VComputer(220)
