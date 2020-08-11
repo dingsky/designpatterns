@@ -14,20 +14,19 @@ const (
 )
 
 const (
-	Man = "男性"
+	Man   = "男性"
 	Woman = "女性"
 )
 
 // 角色
 type Character struct {
-	name           string			// 姓名
-	Height         float64			// 身高
-	Age            int64            // 年龄
-	Sex            string           // 性别
-	Speed           float64			// 跑步速度
-	WeightBearing  float64          // 负重
+	name          string  // 姓名
+	Height        float64 // 身高
+	Age           int64   // 年龄
+	Sex           string  // 性别
+	Speed         float64 // 跑步速度
+	WeightBearing float64 // 负重
 }
-
 
 func (c *Character) SetName(name string) {
 	c.name = name
@@ -62,7 +61,7 @@ func (c *Character) GetSex() string {
 }
 
 func (c *Character) SetSpeed() {
-	c.Speed = 100/(c.WeightBearing+c.Height+float64(c.Age))
+	c.Speed = 100 / (c.WeightBearing + c.Height + float64(c.Age))
 }
 
 func (c *Character) GetSpeed() float64 {
@@ -76,4 +75,3 @@ func (c *Character) SetWeightBearing(weightBearing float64) {
 func (c *Character) GetWeightBearing() float64 {
 	return c.WeightBearing
 }
-

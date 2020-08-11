@@ -9,11 +9,11 @@ type Builder interface {
 
 type SniperBuilder struct {
 	Character Character
-	Arms ArmList
-	Model Model
+	Arms      ArmList
+	Model     Model
 }
 
-func (s *SniperBuilder)SetCharacter(weightBearing float64) {
+func (s *SniperBuilder) SetCharacter(weightBearing float64) {
 	s.Character.SetName("张三")
 	s.Character.SetAge(30)
 	s.Character.SetHeight(1.8)
@@ -22,7 +22,7 @@ func (s *SniperBuilder)SetCharacter(weightBearing float64) {
 	s.Character.SetSpeed()
 }
 
-func (s *SniperBuilder)SetArms() float64 {
+func (s *SniperBuilder) SetArms() float64 {
 	arm := new(Arm)
 	arm.ArmWeight = 30
 	arm.ArmName = SniperRifle
@@ -41,21 +41,21 @@ func (s *SniperBuilder)SetArms() float64 {
 	return s.Arms.GetArmsTotalWeight()
 }
 
-func (s *SniperBuilder)SetModel() {
+func (s *SniperBuilder) SetModel() {
 	s.Model.SetName(CharacterModel1)
 }
 
-func (s *SniperBuilder)Build() interface{} {
+func (s *SniperBuilder) Build() interface{} {
 	return s
 }
 
 type SMGInfantryBuilder struct {
 	Character Character
-	Arms ArmList
-	Model Model
+	Arms      ArmList
+	Model     Model
 }
 
-func (s *SMGInfantryBuilder)SetCharacter(weightBearing float64) {
+func (s *SMGInfantryBuilder) SetCharacter(weightBearing float64) {
 	s.Character.SetName("李四")
 	s.Character.SetAge(28)
 	s.Character.SetHeight(1.75)
@@ -64,7 +64,7 @@ func (s *SMGInfantryBuilder)SetCharacter(weightBearing float64) {
 	s.Character.SetSpeed()
 }
 
-func (s *SMGInfantryBuilder)SetArms() float64 {
+func (s *SMGInfantryBuilder) SetArms() float64 {
 	arm := new(Arm)
 	arm.ArmWeight = 20
 	arm.ArmName = SubmachineGun
@@ -84,21 +84,21 @@ func (s *SMGInfantryBuilder)SetArms() float64 {
 
 }
 
-func (s *SMGInfantryBuilder)SetModel() {
+func (s *SMGInfantryBuilder) SetModel() {
 	s.Model.SetName(CharacterModel3)
 }
 
-func (s *SMGInfantryBuilder)Build() interface{} {
+func (s *SMGInfantryBuilder) Build() interface{} {
 	return s
 }
 
 type HostageBuilder struct {
 	Character Character
-	Arms ArmList
-	Model Model
+	Arms      ArmList
+	Model     Model
 }
 
-func (s *HostageBuilder)SetCharacter(weightBearing float64) {
+func (s *HostageBuilder) SetCharacter(weightBearing float64) {
 	s.Character.SetName("李娜")
 	s.Character.SetAge(22)
 	s.Character.SetHeight(1.65)
@@ -107,14 +107,14 @@ func (s *HostageBuilder)SetCharacter(weightBearing float64) {
 	s.Character.SetSpeed()
 }
 
-func (s *HostageBuilder)SetArms() float64 {
+func (s *HostageBuilder) SetArms() float64 {
 	return 0
 }
 
-func (s *HostageBuilder)SetModel() {
+func (s *HostageBuilder) SetModel() {
 	s.Model.SetName(CharacterModel2)
 }
 
-func (s *HostageBuilder)Build() interface{} {
+func (s *HostageBuilder) Build() interface{} {
 	return s
 }

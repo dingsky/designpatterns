@@ -5,7 +5,7 @@ import (
 	"fmt"
 )
 
-func main () {
+func main() {
 	sniperBuilder := new(builderPatterns.SniperBuilder)
 	directpor := builderPatterns.NewDirector(sniperBuilder)
 	directpor.Create()
