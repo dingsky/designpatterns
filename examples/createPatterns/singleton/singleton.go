@@ -7,8 +7,13 @@ import (
 )
 
 func main() {
-	for i := 0; i < 100; i++ {
-		fmt.Println(singleton.GetInstance().SingletonData())
+	for i := 0; i < 10; i++ {
+		fmt.Println(singleton.GetHungryManSingleton().SingletonData())
+		time.Sleep(time.Second)
+	}
+
+	for i := 0; i < 10; i++ {
+		fmt.Println(singleton.GetLazyManSingleton().SingletonData())
 		time.Sleep(time.Second)
 	}
 }
